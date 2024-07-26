@@ -6,7 +6,7 @@ export function FoodCard() {
   return (
     <div
       style={backgroundImage}
-      className="h-44 w-2/3 bg-cover text-white font-semibold text-3xl rounded-md flex justify-center items-center"
+      className="h-44 w-[500px] bg-cover bg-center text-white font-semibold text-3xl drop-shadow-[1px_1px_3px_rgba(0,0,0,0.2)] shadow-xl rounded-md flex justify-center items-center"
     >
       Breakfast
     </div>
