@@ -38,8 +38,29 @@ export function ProductCard() {
 
 export function TripCard() {
   return (
-    <div>
-      TripCard
+    <div className="w-[500px] shadow-[0px_0px_15px_rgba(0,0,0,0.3)]">
+      <div className="h-52 relative">
+        <Image
+          src="https://images.unsplash.com/photo-1522787345986-d5c7885a889e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+          fill={true}
+          alt="Trip image"
+          className="object-cover"
+        />
+      </div>
+      <div className="flex justify-between items-center p-4 relative">
+        <div>
+          <h1 className="text-base font-bold">Title here</h1>
+          <p className="text-xs opacity-70">Short description here!</p>
+        </div>
+        <h2 className="text-base font-bold">£99.99</h2>
+        <Image
+          src="https://kitt.lewagon.com/placeholder/users/krokrob"
+          width={40}
+          height={40}
+          alt="Avatar image"
+          className="rounded-full border-2 border-white shadow-md absolute right-6 -top-5"
+        />
+      </div>
     </div>
   )
 }
