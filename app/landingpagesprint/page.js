@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import { Banner } from './components/banner'
 import { StepCard } from './components/cards'
+import { Footer } from './components/footer'
 
 export default function Page() {
   return (
-    <div className="m-0">
+    <div>
       <p className="text-xl absolute left-5 top-5">
         <Link href="/" className="text-blue-300 flex">
             <svg
@@ -23,7 +24,15 @@ export default function Page() {
           </Link>
       </p>
       <Banner />
-
+      <div>
+        <h2>How it works</h2>
+        <div>
+          <StepCard />
+          <StepCard />
+          <StepCard />
+        </div>
+      <Footer />
+      </div>
     </div>
   )
 }
