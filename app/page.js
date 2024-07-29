@@ -9,6 +9,7 @@ export default function Home() {
         <li className="text-xl"><Link href="/buttonsprint" className="text-blue-800 hover:text-blue-300">Button Sprint</Link></li>
         <li className="text-xl"><Link href="/cardsprint" className="text-blue-800 hover:text-blue-300">Card Sprint</Link></li>
         <li className="text-xl"><Link href="/landingpagesprint" className="text-blue-800 hover:text-blue-300">Landing Page Sprint</Link></li>
+        <li className="text-xl"><Link href="/opencomponent" className="text-blue-800 hover:text-blue-300">Open Component Challenge</Link></li>
       </ul>
     </div>
   );
