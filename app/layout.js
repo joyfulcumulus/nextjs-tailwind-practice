@@ -7,9 +7,12 @@ config.autoAddCss = false
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "NextJS | Tailwind CSS Practice",
+  title: {
+    template: '%s | NextJS Tailwind CSS Practice',
+    default: 'NextJS Tailwind CSS Practice',
+  },
   description: "Simple UIs using Tailwind",
-};
+}
 
 export default function RootLayout({ children }) {
   return (

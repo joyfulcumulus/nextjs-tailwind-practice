@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import { WhiteButton, GreenButton } from '@/app/buttonsprint/components/buttons'
 
+export const metadata = {
+  title: 'Button Sprint',
+}
+
 export default function Page() {
   return (
     <div className="m-10">

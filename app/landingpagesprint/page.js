@@ -3,6 +3,10 @@ import { Banner } from './components/banner'
 import { StepCard } from './components/cards'
 import { Footer } from './components/footer'
 
+export const metadata = {
+  title: 'Landing Page Sprint',
+}
+
 export default function Page() {
   return (
     <div>

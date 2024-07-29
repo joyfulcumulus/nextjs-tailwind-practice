@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import { FoodCard, ProductCard, TripCard } from './components/cards'
 
+export const metadata = {
+  title: 'Card Sprint',
+}
+
 export default function Page() {
   return (
     <div className="m-10">
