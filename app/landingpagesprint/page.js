@@ -24,15 +24,27 @@ export default function Page() {
           </Link>
       </p>
       <Banner />
-      <div>
-        <h2>How it works</h2>
-        <div>
-          <StepCard />
-          <StepCard />
-          <StepCard />
+      <div className='w-3/4 mx-auto'>
+        <h2 className="text-2xl font-bold text-center my-4">How it works</h2>
+        <div className="flex flex-wrap justify-between mb-9">
+          <StepCard
+            header='Apply'
+            text='First apply to one of our campuses around the world.'
+            img='https://lewagon.github.io/landing-page-challenge/images/apply.svg'
+          />
+          <StepCard
+            header='Learn to code'
+            text='Learn Ruby on Rails, Javascript, SQL & much more!'
+            img='https://lewagon.github.io/landing-page-challenge/images/learn.svg'
+          />
+          <StepCard
+            header='Build products'
+            text='Finally you will be able to bring your ideas to life.'
+            img='https://lewagon.github.io/landing-page-challenge/images/product.svg'
+          />
         </div>
-      <Footer />
       </div>
+      <Footer />
     </div>
   )
 }
