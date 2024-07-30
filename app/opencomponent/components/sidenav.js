@@ -24,7 +24,7 @@ export default function SideNav() {
         <SideNavButton linkText="Chat" icon={faMessage}/>
         <SideNavButton linkText="Calendar" icon={faCalendar}/>
         <SideNavButton linkText="Todo List" icon={faRectangleList}/>
-        <SideNavButton linkText="Products" icon={faStore}/>
+        <SideNavButton linkText="Products" icon={faStore} isActive={true} />
         <SideNavButton linkText="Favourite Products" icon={faHeart}/>
         <SideNavButton linkText="Orders" icon={faCreditCard}/>
         <SideNavButton linkText="Invoice" icon={faFileLines}/>

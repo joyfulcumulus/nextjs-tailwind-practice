@@ -18,12 +18,12 @@ export default function NavBar({ username="Alien John", role="Admin" }) {
             <div className="pe-4">
               <Image
                 src="https://images.unsplash.com/photo-1653820996410-ce8a8bd1cb01?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                width={40}
-                height={40}
+                width={35}
+                height={35}
                 alt="Language image"
               />
             </div>
-            <p className="text-sm font-semibold text-gray-700">English</p>
+            <p className="text-sm font-semibold text-gray-600">English</p>
           </div>
           <div className="ps-4">
             <Link href="#">
@@ -37,14 +37,14 @@ export default function NavBar({ username="Alien John", role="Admin" }) {
             <div className="pe-4">
               <Image
                 src="https://kitt.lewagon.com/placeholder/users/krokrob"
-                width={40}
-                height={40}
+                width={35}
+                height={35}
                 alt="Avatar image"
                 className="rounded-full shadow-md"
               />
             </div>
             <div>
-              <p className="text-sm font-semibold text-gray-700">{username}</p>
+              <p className="text-sm font-semibold text-gray-600">{username}</p>
               <p className="text-xs text-gray-500">{role}</p>
             </div>
           </div>
