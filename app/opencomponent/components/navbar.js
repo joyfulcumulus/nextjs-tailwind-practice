@@ -1,15 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faBell, faComment} from '@fortawesome/free-solid-svg-icons'
+import { faBell, faComment} from '@fortawesome/free-solid-svg-icons'
+import Search from './search'
 
 export default function NavBar() {
   return (
     <div className="flex justify-between p-4 bg-white shadow-md mb-2">
-      <div>
-        <FontAwesomeIcon icon={faMagnifyingGlass} className="inline-block" />
-        <form className="inline-block">
-          <input placeholder="Search Chat" />
-        </form>
-      </div>
+      <Search />
 
       <div>
         <FontAwesomeIcon icon={faBell} className="inline-block" />
