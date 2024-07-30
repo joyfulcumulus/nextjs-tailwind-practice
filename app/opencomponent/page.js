@@ -4,7 +4,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <div className="">
+    <div className="bg-white">
       Product Content
     </div>
   )

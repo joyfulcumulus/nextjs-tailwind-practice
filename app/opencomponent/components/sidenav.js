@@ -32,7 +32,9 @@ export default function SideNav() {
         <SideNavButton linkText="UI Elements" />
       </div>
 
-      <SideNavButton linkText="Log Out" icon={faArrowRightFromBracket}/>
+      <div className="pb-2">
+        <SideNavButton linkText="Log Out" icon={faArrowRightFromBracket}/>
+      </div>
 
     </div>
   )
