@@ -8,9 +8,9 @@ export default function Layout({ children }) {
       <div className="">
         <SideNav />
       </div>
-      <div className="grow flex flex-col">
+      <div className="grow flex flex-col justify-between">
         <NavBar />
-        <div className="shadow-md">
+        <div className="shadow-md overflow-auto">
           {children}
         </div>
       </div>
