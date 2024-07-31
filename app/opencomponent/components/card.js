@@ -1,7 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
-export default function Card({ title="Item title", desc="A product description", rating=3, price=65}) {
+export default function Card({ title="Item title", desc="A product description", rating=3.4, price=65}) {
   const formattedRating = rating.toFixed(1);
 
   return (
@@ -19,7 +21,14 @@ export default function Card({ title="Item title", desc="A product description",
         <div>
           <p className="text-base font-semibold text-slate-800">{title}</p>
           <p className="text-xs text-gray-400 my-1">{desc}</p>
-          <p className="text-xs text-gray-400">({formattedRating})</p>
+          <p className="text-xs text-gray-400">
+            {
+              [...Array(5)].map((_, i) =>
+                <FontAwesomeIcon icon={faStar} key={i + 1} className={i + 1 <= rating ? "text-yellow-400" : "text-gray-200"}/>
+              )
+            }
+            ({formattedRating})
+          </p>
         </div>
         <div className="text-base font-semibold text-blue-400">
           ${price}
